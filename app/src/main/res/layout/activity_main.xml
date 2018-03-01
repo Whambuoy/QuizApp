@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.justjava.MainActivity"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter your name"
+            android:inputType="textCapWords"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Which number should come next in the pattern?
+37, 34, 31, 28, ?"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="16dp"/>
+                <CheckBox
+                    android:id="@+id/one_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:textSize="16sp"
+                    android:paddingLeft="24dp"
+                    android:layout_marginLeft="16dp" />
+
+                <CheckBox
+                    android:id="@+id/one_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24.5"
+                    android:textSize="16sp"
+                    android:paddingLeft="24dp"
+                    android:layout_marginLeft="16dp" />
+            </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
