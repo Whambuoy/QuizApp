@@ -13,12 +13,18 @@ import android.view.ViewGroup;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     int score = 0;
-    Button submitButton = (Button) findViewById(R.id.submit);
-
+    Button submitButton;
+    TextView priceTextView;
+    CheckBox oneA;
+    CheckBox oneB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        submitButton = (Button) findViewById(R.id.submit);
+        priceTextView = (TextView) findViewById(R.id.order_score_text_view);
+        oneA = (CheckBox) findViewById(R.id.one_a);
+        oneB = (CheckBox) findViewById(R.id.one_b);
         submitButton.setOnClickListener(this);
 
     }
@@ -28,10 +34,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     public void submitScore(View view) {
 
-        CheckBox oneA = (CheckBox) findViewById(R.id.one_a);
-        boolean first = oneA.isChecked();
 
-        CheckBox oneB = (CheckBox) findViewById(R.id.one_b);
+        boolean first = oneA.isChecked();
         boolean second = oneB.isChecked();
         int score = calculateScore(first, second);
         displayPrice(score);
@@ -57,8 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * This method displays the given price on the screen.
      */
     private void displayPrice(int score) {
-        TextView priceTextView = (TextView) findViewById(R.id.order_score_text_view);
-        priceTextView.setText(score);
+        priceTextView.setText(""+score);
     }
 
     @Override
@@ -67,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.submit:
                 submitScore(view);
-
+                break;
         }
 
     }
