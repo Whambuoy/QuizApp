@@ -1,5 +1,6 @@
 package com.example.android.quizapp;
 
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         submitButton = (Button) findViewById(R.id.submit);
         resetButton = (Button) findViewById(R.id.reset);
         scoreTextView = (TextView) findViewById(R.id.score_text_view);
@@ -29,8 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         oneB = (CheckBox) findViewById(R.id.one_b);
         submitButton.setOnClickListener(this);
         resetButton.setOnClickListener(this);
-
-
 
     }
 
@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else{
             score = 0;
         }
-
 
         return score;
     }
