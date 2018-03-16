@@ -30,8 +30,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
-                android:text="1. Which number should come next in the pattern?
-37, 34, 31, 28, ?"
+                android:text="@string/question_2"
                 android:textAllCaps="false" />
 
             <CheckBox
@@ -40,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:paddingLeft="24dp"
-                android:text="25"
+                android:text="@string/answer_1_a"
                 android:textSize="16sp" />
 
             <CheckBox
@@ -49,9 +48,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:paddingLeft="24dp"
-                android:text="24.5"
+                android:text="@string/answer_1_b"
                 android:textSize="16sp" />
         </LinearLayout>
+        <!--  QUESTION 2-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,13 +63,46 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
-                android:text="Score"
+                android:text="@string/question_2"
+                android:textAllCaps="false" />
+
+            <CheckBox
+                android:id="@+id/two_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="@string/answer_2_a"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/two_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="@string/answer_2_b"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/score"
                 android:textAllCaps="true" />
             <TextView
                 android:id="@+id/score_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/value"
                 android:textSize="16sp"
                 android:textColor="#000000"
                 android:layout_marginBottom="16dp"

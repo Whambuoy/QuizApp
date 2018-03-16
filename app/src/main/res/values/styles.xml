@@ -7,5 +7,22 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <string name="question_1">1. What is the number that is one half of one quarter of one tenth of 480?</string>
+    <string name="answer_1_a">25</string>
+    <string name="answer_1_b">24.5</string>
 
+    <string name="question_2">2. What is the number that is one half of one quarter of one tenth of 480?</string>
+    <string name="answer_2_a">6</string>
+    <string name="answer_2_b">12</string>
+
+    <string name="question_3">One word in this list doesn\'t belong to the same group: Yen, Pound, Franc, Penny, Mark</string>
+    <string name="answer_3_a">6</string>
+    <string name="answer_3_b">12</string>
+
+    <string name="score">Score</string>
+    <string name="value">0</string>
+
+    <string name="submit">submit</string>
+    <string name="reset">reset</string>
+    <string name="answer">answer</string>
 </resources>

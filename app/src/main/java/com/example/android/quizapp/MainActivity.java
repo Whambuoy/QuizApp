@@ -16,8 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int score = 0;
     Button submitButton, resetButton;
     TextView scoreTextView;
-    CheckBox oneA;
-    CheckBox oneB;
+    CheckBox oneA, oneB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
