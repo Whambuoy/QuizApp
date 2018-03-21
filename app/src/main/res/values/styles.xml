@@ -7,9 +7,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <string name="question_1">1. What is the number that is one half of one quarter of one tenth of 480?</string>
-    <string name="answer_1_a">25</string>
-    <string name="answer_1_b">24.5</string>
+    <string name="question_1">1. What is the the next number in the series 50, 34, 18</string>
+    <string name="answer_1_a">2</string>
+    <string name="answer_1_b">3</string>
 
     <string name="question_2">2. What is the number that is one half of one quarter of one tenth of 480?</string>
     <string name="answer_2_a">6</string>
